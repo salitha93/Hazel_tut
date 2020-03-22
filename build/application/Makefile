@@ -97,14 +97,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/sn100/Downloads/github/Hazel_tut/build/CMakeFiles /home/sn100/Downloads/github/Hazel_tut/build/CMakeFiles/progress.marks
-	$(MAKE) -f CMakeFiles/Makefile2 all
+	cd /home/sn100/Downloads/github/Hazel_tut/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/sn100/Downloads/github/Hazel_tut/build/CMakeFiles /home/sn100/Downloads/github/Hazel_tut/build/application/CMakeFiles/progress.marks
+	cd /home/sn100/Downloads/github/Hazel_tut/build && $(MAKE) -f CMakeFiles/Makefile2 application/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/sn100/Downloads/github/Hazel_tut/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) -f CMakeFiles/Makefile2 clean
+	cd /home/sn100/Downloads/github/Hazel_tut/build && $(MAKE) -f CMakeFiles/Makefile2 application/clean
 .PHONY : clean
 
 # The main clean target
@@ -114,44 +114,60 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+	cd /home/sn100/Downloads/github/Hazel_tut/build && $(MAKE) -f CMakeFiles/Makefile2 application/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+	cd /home/sn100/Downloads/github/Hazel_tut/build && $(MAKE) -f CMakeFiles/Makefile2 application/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/sn100/Downloads/github/Hazel_tut/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named hazel
+# Convenience name for target.
+application/CMakeFiles/application.dir/rule:
+	cd /home/sn100/Downloads/github/Hazel_tut/build && $(MAKE) -f CMakeFiles/Makefile2 application/CMakeFiles/application.dir/rule
+.PHONY : application/CMakeFiles/application.dir/rule
 
-# Build rule for target.
-hazel: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 hazel
-.PHONY : hazel
+# Convenience name for target.
+application: application/CMakeFiles/application.dir/rule
 
-# fast build rule for target.
-hazel/fast:
-	$(MAKE) -f hazel/CMakeFiles/hazel.dir/build.make hazel/CMakeFiles/hazel.dir/build
-.PHONY : hazel/fast
-
-#=============================================================================
-# Target rules for targets named application
-
-# Build rule for target.
-application: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 application
 .PHONY : application
 
 # fast build rule for target.
 application/fast:
-	$(MAKE) -f application/CMakeFiles/application.dir/build.make application/CMakeFiles/application.dir/build
+	cd /home/sn100/Downloads/github/Hazel_tut/build && $(MAKE) -f application/CMakeFiles/application.dir/build.make application/CMakeFiles/application.dir/build
 .PHONY : application/fast
+
+main.o: main.cpp.o
+
+.PHONY : main.o
+
+# target to build an object file
+main.cpp.o:
+	cd /home/sn100/Downloads/github/Hazel_tut/build && $(MAKE) -f application/CMakeFiles/application.dir/build.make application/CMakeFiles/application.dir/main.cpp.o
+.PHONY : main.cpp.o
+
+main.i: main.cpp.i
+
+.PHONY : main.i
+
+# target to preprocess a source file
+main.cpp.i:
+	cd /home/sn100/Downloads/github/Hazel_tut/build && $(MAKE) -f application/CMakeFiles/application.dir/build.make application/CMakeFiles/application.dir/main.cpp.i
+.PHONY : main.cpp.i
+
+main.s: main.cpp.s
+
+.PHONY : main.s
+
+# target to generate assembly for a file
+main.cpp.s:
+	cd /home/sn100/Downloads/github/Hazel_tut/build && $(MAKE) -f application/CMakeFiles/application.dir/build.make application/CMakeFiles/application.dir/main.cpp.s
+.PHONY : main.cpp.s
 
 # Help Target
 help:
@@ -162,7 +178,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... application"
-	@echo "... hazel"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
 .PHONY : help
 
 
@@ -174,6 +192,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/sn100/Downloads/github/Hazel_tut/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 
