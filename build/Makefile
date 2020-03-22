@@ -140,6 +140,49 @@ hazel/fast:
 	$(MAKE) -f CMakeFiles/hazel.dir/build.make CMakeFiles/hazel.dir/build
 .PHONY : hazel/fast
 
+#=============================================================================
+# Target rules for targets named sayHello
+
+# Build rule for target.
+sayHello: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 sayHello
+.PHONY : sayHello
+
+# fast build rule for target.
+sayHello/fast:
+	$(MAKE) -f CMakeFiles/sayHello.dir/build.make CMakeFiles/sayHello.dir/build
+.PHONY : sayHello/fast
+
+Hello.o: Hello.cpp.o
+
+.PHONY : Hello.o
+
+# target to build an object file
+Hello.cpp.o:
+	$(MAKE) -f CMakeFiles/hazel.dir/build.make CMakeFiles/hazel.dir/Hello.cpp.o
+	$(MAKE) -f CMakeFiles/sayHello.dir/build.make CMakeFiles/sayHello.dir/Hello.cpp.o
+.PHONY : Hello.cpp.o
+
+Hello.i: Hello.cpp.i
+
+.PHONY : Hello.i
+
+# target to preprocess a source file
+Hello.cpp.i:
+	$(MAKE) -f CMakeFiles/hazel.dir/build.make CMakeFiles/hazel.dir/Hello.cpp.i
+	$(MAKE) -f CMakeFiles/sayHello.dir/build.make CMakeFiles/sayHello.dir/Hello.cpp.i
+.PHONY : Hello.cpp.i
+
+Hello.s: Hello.cpp.s
+
+.PHONY : Hello.s
+
+# target to generate assembly for a file
+Hello.cpp.s:
+	$(MAKE) -f CMakeFiles/hazel.dir/build.make CMakeFiles/hazel.dir/Hello.cpp.s
+	$(MAKE) -f CMakeFiles/sayHello.dir/build.make CMakeFiles/sayHello.dir/Hello.cpp.s
+.PHONY : Hello.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -176,6 +219,10 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... hazel"
+	@echo "... sayHello"
+	@echo "... Hello.o"
+	@echo "... Hello.i"
+	@echo "... Hello.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
