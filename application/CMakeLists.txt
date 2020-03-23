@@ -1,3 +1,3 @@
 add_executable(application main.cpp)
 
-target_link_libraries(application PRIVATE hazel)
+target_link_libraries(application PRIVATE Hazel)

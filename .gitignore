@@ -1,5 +1,6 @@
 *.json
 *.o
+*so
 *.make
 *.cmake
 *.marks
@@ -19,3 +20,4 @@ build/CMakeFiles/3.17.0/CMakeDetermineCompilerABI_C.bin
 build/CMakeFiles/TargetDirectories.txt
 build/CMakeFiles/Makefile2
 build/CMakeCache.txt
+build/Hazel/CMakeFiles/Hazel.dir/link.txt
