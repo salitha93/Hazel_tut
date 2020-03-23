@@ -11,7 +11,12 @@ namespace Hazel
         Application();
         virtual ~Application();
 
+        void Run();
+
     }; 
+
+    //To be defined in client
+    Application* CreateApplication();
 } //namespace Hazel
 
 #endif //  APPLICATION_HPP_INCLUDED

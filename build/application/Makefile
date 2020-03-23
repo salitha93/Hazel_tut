@@ -142,32 +142,32 @@ application/fast:
 	cd /home/sn100/Downloads/github/Hazel_tut/build && $(MAKE) -f application/CMakeFiles/application.dir/build.make application/CMakeFiles/application.dir/build
 .PHONY : application/fast
 
-main.o: main.cpp.o
+Sandbox.o: Sandbox.cpp.o
 
-.PHONY : main.o
+.PHONY : Sandbox.o
 
 # target to build an object file
-main.cpp.o:
-	cd /home/sn100/Downloads/github/Hazel_tut/build && $(MAKE) -f application/CMakeFiles/application.dir/build.make application/CMakeFiles/application.dir/main.cpp.o
-.PHONY : main.cpp.o
+Sandbox.cpp.o:
+	cd /home/sn100/Downloads/github/Hazel_tut/build && $(MAKE) -f application/CMakeFiles/application.dir/build.make application/CMakeFiles/application.dir/Sandbox.cpp.o
+.PHONY : Sandbox.cpp.o
 
-main.i: main.cpp.i
+Sandbox.i: Sandbox.cpp.i
 
-.PHONY : main.i
+.PHONY : Sandbox.i
 
 # target to preprocess a source file
-main.cpp.i:
-	cd /home/sn100/Downloads/github/Hazel_tut/build && $(MAKE) -f application/CMakeFiles/application.dir/build.make application/CMakeFiles/application.dir/main.cpp.i
-.PHONY : main.cpp.i
+Sandbox.cpp.i:
+	cd /home/sn100/Downloads/github/Hazel_tut/build && $(MAKE) -f application/CMakeFiles/application.dir/build.make application/CMakeFiles/application.dir/Sandbox.cpp.i
+.PHONY : Sandbox.cpp.i
 
-main.s: main.cpp.s
+Sandbox.s: Sandbox.cpp.s
 
-.PHONY : main.s
+.PHONY : Sandbox.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	cd /home/sn100/Downloads/github/Hazel_tut/build && $(MAKE) -f application/CMakeFiles/application.dir/build.make application/CMakeFiles/application.dir/main.cpp.s
-.PHONY : main.cpp.s
+Sandbox.cpp.s:
+	cd /home/sn100/Downloads/github/Hazel_tut/build && $(MAKE) -f application/CMakeFiles/application.dir/build.make application/CMakeFiles/application.dir/Sandbox.cpp.s
+.PHONY : Sandbox.cpp.s
 
 # Help Target
 help:
@@ -178,9 +178,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... application"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... Sandbox.o"
+	@echo "... Sandbox.i"
+	@echo "... Sandbox.s"
 .PHONY : help
 
 

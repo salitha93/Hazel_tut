@@ -3,7 +3,8 @@ Hazel SHARED
 src/hazel.hpp
 src/Hazel/Core.hpp
 src/Hazel/Application.hpp
-src/Hazel/Application.hpp
+src/Hazel/Application.cpp
+src/Hazel/EntryPoint.hpp
 src/say-hello/Hello.hpp
 src/say-hello/Hello.cpp
 )

@@ -142,6 +142,33 @@ Hazel/fast:
 	cd /home/sn100/Downloads/github/Hazel_tut/build && $(MAKE) -f Hazel/CMakeFiles/Hazel.dir/build.make Hazel/CMakeFiles/Hazel.dir/build
 .PHONY : Hazel/fast
 
+src/Hazel/Application.o: src/Hazel/Application.cpp.o
+
+.PHONY : src/Hazel/Application.o
+
+# target to build an object file
+src/Hazel/Application.cpp.o:
+	cd /home/sn100/Downloads/github/Hazel_tut/build && $(MAKE) -f Hazel/CMakeFiles/Hazel.dir/build.make Hazel/CMakeFiles/Hazel.dir/src/Hazel/Application.cpp.o
+.PHONY : src/Hazel/Application.cpp.o
+
+src/Hazel/Application.i: src/Hazel/Application.cpp.i
+
+.PHONY : src/Hazel/Application.i
+
+# target to preprocess a source file
+src/Hazel/Application.cpp.i:
+	cd /home/sn100/Downloads/github/Hazel_tut/build && $(MAKE) -f Hazel/CMakeFiles/Hazel.dir/build.make Hazel/CMakeFiles/Hazel.dir/src/Hazel/Application.cpp.i
+.PHONY : src/Hazel/Application.cpp.i
+
+src/Hazel/Application.s: src/Hazel/Application.cpp.s
+
+.PHONY : src/Hazel/Application.s
+
+# target to generate assembly for a file
+src/Hazel/Application.cpp.s:
+	cd /home/sn100/Downloads/github/Hazel_tut/build && $(MAKE) -f Hazel/CMakeFiles/Hazel.dir/build.make Hazel/CMakeFiles/Hazel.dir/src/Hazel/Application.cpp.s
+.PHONY : src/Hazel/Application.cpp.s
+
 src/say-hello/Hello.o: src/say-hello/Hello.cpp.o
 
 .PHONY : src/say-hello/Hello.o
@@ -178,6 +205,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... Hazel"
+	@echo "... src/Hazel/Application.o"
+	@echo "... src/Hazel/Application.i"
+	@echo "... src/Hazel/Application.s"
 	@echo "... src/say-hello/Hello.o"
 	@echo "... src/say-hello/Hello.i"
 	@echo "... src/say-hello/Hello.s"
