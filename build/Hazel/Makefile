@@ -169,32 +169,32 @@ src/Hazel/Application.cpp.s:
 	cd /home/sn100/Downloads/github/Hazel_tut/build && $(MAKE) -f Hazel/CMakeFiles/Hazel.dir/build.make Hazel/CMakeFiles/Hazel.dir/src/Hazel/Application.cpp.s
 .PHONY : src/Hazel/Application.cpp.s
 
-src/say-hello/Hello.o: src/say-hello/Hello.cpp.o
+src/Hazel/Log.o: src/Hazel/Log.cpp.o
 
-.PHONY : src/say-hello/Hello.o
+.PHONY : src/Hazel/Log.o
 
 # target to build an object file
-src/say-hello/Hello.cpp.o:
-	cd /home/sn100/Downloads/github/Hazel_tut/build && $(MAKE) -f Hazel/CMakeFiles/Hazel.dir/build.make Hazel/CMakeFiles/Hazel.dir/src/say-hello/Hello.cpp.o
-.PHONY : src/say-hello/Hello.cpp.o
+src/Hazel/Log.cpp.o:
+	cd /home/sn100/Downloads/github/Hazel_tut/build && $(MAKE) -f Hazel/CMakeFiles/Hazel.dir/build.make Hazel/CMakeFiles/Hazel.dir/src/Hazel/Log.cpp.o
+.PHONY : src/Hazel/Log.cpp.o
 
-src/say-hello/Hello.i: src/say-hello/Hello.cpp.i
+src/Hazel/Log.i: src/Hazel/Log.cpp.i
 
-.PHONY : src/say-hello/Hello.i
+.PHONY : src/Hazel/Log.i
 
 # target to preprocess a source file
-src/say-hello/Hello.cpp.i:
-	cd /home/sn100/Downloads/github/Hazel_tut/build && $(MAKE) -f Hazel/CMakeFiles/Hazel.dir/build.make Hazel/CMakeFiles/Hazel.dir/src/say-hello/Hello.cpp.i
-.PHONY : src/say-hello/Hello.cpp.i
+src/Hazel/Log.cpp.i:
+	cd /home/sn100/Downloads/github/Hazel_tut/build && $(MAKE) -f Hazel/CMakeFiles/Hazel.dir/build.make Hazel/CMakeFiles/Hazel.dir/src/Hazel/Log.cpp.i
+.PHONY : src/Hazel/Log.cpp.i
 
-src/say-hello/Hello.s: src/say-hello/Hello.cpp.s
+src/Hazel/Log.s: src/Hazel/Log.cpp.s
 
-.PHONY : src/say-hello/Hello.s
+.PHONY : src/Hazel/Log.s
 
 # target to generate assembly for a file
-src/say-hello/Hello.cpp.s:
-	cd /home/sn100/Downloads/github/Hazel_tut/build && $(MAKE) -f Hazel/CMakeFiles/Hazel.dir/build.make Hazel/CMakeFiles/Hazel.dir/src/say-hello/Hello.cpp.s
-.PHONY : src/say-hello/Hello.cpp.s
+src/Hazel/Log.cpp.s:
+	cd /home/sn100/Downloads/github/Hazel_tut/build && $(MAKE) -f Hazel/CMakeFiles/Hazel.dir/build.make Hazel/CMakeFiles/Hazel.dir/src/Hazel/Log.cpp.s
+.PHONY : src/Hazel/Log.cpp.s
 
 # Help Target
 help:
@@ -208,9 +208,9 @@ help:
 	@echo "... src/Hazel/Application.o"
 	@echo "... src/Hazel/Application.i"
 	@echo "... src/Hazel/Application.s"
-	@echo "... src/say-hello/Hello.o"
-	@echo "... src/say-hello/Hello.i"
-	@echo "... src/say-hello/Hello.s"
+	@echo "... src/Hazel/Log.o"
+	@echo "... src/Hazel/Log.i"
+	@echo "... src/Hazel/Log.s"
 .PHONY : help
 
 

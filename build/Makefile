@@ -128,19 +128,6 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named Hazel
-
-# Build rule for target.
-Hazel: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 Hazel
-.PHONY : Hazel
-
-# fast build rule for target.
-Hazel/fast:
-	$(MAKE) -f Hazel/CMakeFiles/Hazel.dir/build.make Hazel/CMakeFiles/Hazel.dir/build
-.PHONY : Hazel/fast
-
-#=============================================================================
 # Target rules for targets named spdlog
 
 # Build rule for target.
@@ -152,6 +139,19 @@ spdlog: cmake_check_build_system
 spdlog/fast:
 	$(MAKE) -f Hazel/vendor/spdlog/CMakeFiles/spdlog.dir/build.make Hazel/vendor/spdlog/CMakeFiles/spdlog.dir/build
 .PHONY : spdlog/fast
+
+#=============================================================================
+# Target rules for targets named Hazel
+
+# Build rule for target.
+Hazel: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Hazel
+.PHONY : Hazel
+
+# fast build rule for target.
+Hazel/fast:
+	$(MAKE) -f Hazel/CMakeFiles/Hazel.dir/build.make Hazel/CMakeFiles/Hazel.dir/build
+.PHONY : Hazel/fast
 
 #=============================================================================
 # Target rules for targets named application

@@ -4,7 +4,7 @@
 // For use by Hazel Applications
 
 #include "Hazel/Application.hpp"
-#include "say-hello/Hello.hpp"
+#include "Hazel/Log.hpp"
 
 //-----Entry Point-------
 #include "Hazel/EntryPoint.hpp"
