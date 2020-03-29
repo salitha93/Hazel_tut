@@ -141,6 +141,19 @@ Hazel/fast:
 .PHONY : Hazel/fast
 
 #=============================================================================
+# Target rules for targets named spdlog
+
+# Build rule for target.
+spdlog: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 spdlog
+.PHONY : spdlog
+
+# fast build rule for target.
+spdlog/fast:
+	$(MAKE) -f Hazel/vendor/spdlog/CMakeFiles/spdlog.dir/build.make Hazel/vendor/spdlog/CMakeFiles/spdlog.dir/build
+.PHONY : spdlog/fast
+
+#=============================================================================
 # Target rules for targets named application
 
 # Build rule for target.
@@ -163,6 +176,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... Hazel"
 	@echo "... application"
+	@echo "... spdlog"
 .PHONY : help
 
 

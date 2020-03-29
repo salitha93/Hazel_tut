@@ -1,3 +1,5 @@
+add_subdirectory(vendor/spdlog)
+
 add_library(
 Hazel SHARED
 src/hazel.hpp
