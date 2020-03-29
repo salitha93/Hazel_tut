@@ -21,3 +21,5 @@ build/CMakeFiles/TargetDirectories.txt
 build/CMakeFiles/Makefile2
 build/CMakeCache.txt
 build/Hazel/CMakeFiles/Hazel.dir/link.txt
+build/Hazel/vendor/spdlog/Makefile
+build/Hazel/vendor/spdlog/CMakeFiles/spdlog.dir/link.txt
