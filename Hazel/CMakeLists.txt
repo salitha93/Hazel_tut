@@ -16,6 +16,6 @@ src/Hazel/Log.hpp
 src/Hazel/Log.cpp
 )
 
-target_link_libraries(Hazel PRIVATE spdlog::spdlog)
+target_link_libraries(Hazel PUBLIC spdlog::spdlog)
 
 target_include_directories(Hazel PUBLIC "$(CMAKE_CURRENT_SOURCE_DIR)/src")

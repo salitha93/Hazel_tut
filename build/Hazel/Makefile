@@ -56,19 +56,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/bin/cmake
+CMAKE_COMMAND = /bin/cmake
 
 # The command to remove a file.
-RM = /usr/bin/cmake -E rm -f
+RM = /bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/sn100/Downloads/github/Hazel_tut
+CMAKE_SOURCE_DIR = /mnt/d/dev/Hazel_tut
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/sn100/Downloads/github/Hazel_tut/build
+CMAKE_BINARY_DIR = /mnt/d/dev/Hazel_tut/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -76,7 +76,7 @@ CMAKE_BINARY_DIR = /home/sn100/Downloads/github/Hazel_tut/build
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
-	/usr/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -87,7 +87,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -97,14 +97,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/sn100/Downloads/github/Hazel_tut/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/sn100/Downloads/github/Hazel_tut/build/CMakeFiles /home/sn100/Downloads/github/Hazel_tut/build/Hazel/CMakeFiles/progress.marks
-	cd /home/sn100/Downloads/github/Hazel_tut/build && $(MAKE) -f CMakeFiles/Makefile2 Hazel/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/sn100/Downloads/github/Hazel_tut/build/CMakeFiles 0
+	cd /mnt/d/dev/Hazel_tut/build && $(CMAKE_COMMAND) -E cmake_progress_start /mnt/d/dev/Hazel_tut/build/CMakeFiles /mnt/d/dev/Hazel_tut/build/Hazel/CMakeFiles/progress.marks
+	cd /mnt/d/dev/Hazel_tut/build && $(MAKE) -f CMakeFiles/Makefile2 Hazel/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/d/dev/Hazel_tut/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/sn100/Downloads/github/Hazel_tut/build && $(MAKE) -f CMakeFiles/Makefile2 Hazel/clean
+	cd /mnt/d/dev/Hazel_tut/build && $(MAKE) -f CMakeFiles/Makefile2 Hazel/clean
 .PHONY : clean
 
 # The main clean target
@@ -114,22 +114,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/sn100/Downloads/github/Hazel_tut/build && $(MAKE) -f CMakeFiles/Makefile2 Hazel/preinstall
+	cd /mnt/d/dev/Hazel_tut/build && $(MAKE) -f CMakeFiles/Makefile2 Hazel/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/sn100/Downloads/github/Hazel_tut/build && $(MAKE) -f CMakeFiles/Makefile2 Hazel/preinstall
+	cd /mnt/d/dev/Hazel_tut/build && $(MAKE) -f CMakeFiles/Makefile2 Hazel/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/sn100/Downloads/github/Hazel_tut/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /mnt/d/dev/Hazel_tut/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 Hazel/CMakeFiles/Hazel.dir/rule:
-	cd /home/sn100/Downloads/github/Hazel_tut/build && $(MAKE) -f CMakeFiles/Makefile2 Hazel/CMakeFiles/Hazel.dir/rule
+	cd /mnt/d/dev/Hazel_tut/build && $(MAKE) -f CMakeFiles/Makefile2 Hazel/CMakeFiles/Hazel.dir/rule
 .PHONY : Hazel/CMakeFiles/Hazel.dir/rule
 
 # Convenience name for target.
@@ -139,7 +139,7 @@ Hazel: Hazel/CMakeFiles/Hazel.dir/rule
 
 # fast build rule for target.
 Hazel/fast:
-	cd /home/sn100/Downloads/github/Hazel_tut/build && $(MAKE) -f Hazel/CMakeFiles/Hazel.dir/build.make Hazel/CMakeFiles/Hazel.dir/build
+	cd /mnt/d/dev/Hazel_tut/build && $(MAKE) -f Hazel/CMakeFiles/Hazel.dir/build.make Hazel/CMakeFiles/Hazel.dir/build
 .PHONY : Hazel/fast
 
 src/Hazel/Application.o: src/Hazel/Application.cpp.o
@@ -148,7 +148,7 @@ src/Hazel/Application.o: src/Hazel/Application.cpp.o
 
 # target to build an object file
 src/Hazel/Application.cpp.o:
-	cd /home/sn100/Downloads/github/Hazel_tut/build && $(MAKE) -f Hazel/CMakeFiles/Hazel.dir/build.make Hazel/CMakeFiles/Hazel.dir/src/Hazel/Application.cpp.o
+	cd /mnt/d/dev/Hazel_tut/build && $(MAKE) -f Hazel/CMakeFiles/Hazel.dir/build.make Hazel/CMakeFiles/Hazel.dir/src/Hazel/Application.cpp.o
 .PHONY : src/Hazel/Application.cpp.o
 
 src/Hazel/Application.i: src/Hazel/Application.cpp.i
@@ -157,7 +157,7 @@ src/Hazel/Application.i: src/Hazel/Application.cpp.i
 
 # target to preprocess a source file
 src/Hazel/Application.cpp.i:
-	cd /home/sn100/Downloads/github/Hazel_tut/build && $(MAKE) -f Hazel/CMakeFiles/Hazel.dir/build.make Hazel/CMakeFiles/Hazel.dir/src/Hazel/Application.cpp.i
+	cd /mnt/d/dev/Hazel_tut/build && $(MAKE) -f Hazel/CMakeFiles/Hazel.dir/build.make Hazel/CMakeFiles/Hazel.dir/src/Hazel/Application.cpp.i
 .PHONY : src/Hazel/Application.cpp.i
 
 src/Hazel/Application.s: src/Hazel/Application.cpp.s
@@ -166,7 +166,7 @@ src/Hazel/Application.s: src/Hazel/Application.cpp.s
 
 # target to generate assembly for a file
 src/Hazel/Application.cpp.s:
-	cd /home/sn100/Downloads/github/Hazel_tut/build && $(MAKE) -f Hazel/CMakeFiles/Hazel.dir/build.make Hazel/CMakeFiles/Hazel.dir/src/Hazel/Application.cpp.s
+	cd /mnt/d/dev/Hazel_tut/build && $(MAKE) -f Hazel/CMakeFiles/Hazel.dir/build.make Hazel/CMakeFiles/Hazel.dir/src/Hazel/Application.cpp.s
 .PHONY : src/Hazel/Application.cpp.s
 
 src/Hazel/Log.o: src/Hazel/Log.cpp.o
@@ -175,7 +175,7 @@ src/Hazel/Log.o: src/Hazel/Log.cpp.o
 
 # target to build an object file
 src/Hazel/Log.cpp.o:
-	cd /home/sn100/Downloads/github/Hazel_tut/build && $(MAKE) -f Hazel/CMakeFiles/Hazel.dir/build.make Hazel/CMakeFiles/Hazel.dir/src/Hazel/Log.cpp.o
+	cd /mnt/d/dev/Hazel_tut/build && $(MAKE) -f Hazel/CMakeFiles/Hazel.dir/build.make Hazel/CMakeFiles/Hazel.dir/src/Hazel/Log.cpp.o
 .PHONY : src/Hazel/Log.cpp.o
 
 src/Hazel/Log.i: src/Hazel/Log.cpp.i
@@ -184,7 +184,7 @@ src/Hazel/Log.i: src/Hazel/Log.cpp.i
 
 # target to preprocess a source file
 src/Hazel/Log.cpp.i:
-	cd /home/sn100/Downloads/github/Hazel_tut/build && $(MAKE) -f Hazel/CMakeFiles/Hazel.dir/build.make Hazel/CMakeFiles/Hazel.dir/src/Hazel/Log.cpp.i
+	cd /mnt/d/dev/Hazel_tut/build && $(MAKE) -f Hazel/CMakeFiles/Hazel.dir/build.make Hazel/CMakeFiles/Hazel.dir/src/Hazel/Log.cpp.i
 .PHONY : src/Hazel/Log.cpp.i
 
 src/Hazel/Log.s: src/Hazel/Log.cpp.s
@@ -193,7 +193,7 @@ src/Hazel/Log.s: src/Hazel/Log.cpp.s
 
 # target to generate assembly for a file
 src/Hazel/Log.cpp.s:
-	cd /home/sn100/Downloads/github/Hazel_tut/build && $(MAKE) -f Hazel/CMakeFiles/Hazel.dir/build.make Hazel/CMakeFiles/Hazel.dir/src/Hazel/Log.cpp.s
+	cd /mnt/d/dev/Hazel_tut/build && $(MAKE) -f Hazel/CMakeFiles/Hazel.dir/build.make Hazel/CMakeFiles/Hazel.dir/src/Hazel/Log.cpp.s
 .PHONY : src/Hazel/Log.cpp.s
 
 # Help Target
@@ -222,6 +222,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/sn100/Downloads/github/Hazel_tut/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /mnt/d/dev/Hazel_tut/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 
