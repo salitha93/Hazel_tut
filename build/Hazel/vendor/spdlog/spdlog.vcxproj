@@ -1,0 +1,429 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{97596909-98F1-3BCD-9A88-E34110502051}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>spdlog</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\dev\Hazel_tut\build\Hazel\vendor\spdlog\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">spdlog.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">spdlogd</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\dev\Hazel_tut\build\Hazel\vendor\spdlog\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">spdlog.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">spdlog</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\dev\Hazel_tut\build\Hazel\vendor\spdlog\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">spdlog.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">spdlog</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\dev\Hazel_tut\build\Hazel\vendor\spdlog\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">spdlog.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">spdlog</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\dev\Hazel_tut\Hazel\vendor\spdlog\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4251;4275</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;SPDLOG_SHARED_LIB;FMT_EXPORT;FMT_SHARED;SPDLOG_COMPILED_LIB;CMAKE_INTDIR="Debug";spdlog_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;SPDLOG_SHARED_LIB;FMT_EXPORT;FMT_SHARED;SPDLOG_COMPILED_LIB;CMAKE_INTDIR=\"Debug\";spdlog_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\dev\Hazel_tut\Hazel\vendor\spdlog\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\dev\Hazel_tut\Hazel\vendor\spdlog\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/dev/Hazel_tut/build/Hazel/vendor/spdlog/Debug/spdlogd.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/dev/Hazel_tut/build/Hazel/vendor/spdlog/Debug/spdlogd.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\dev\Hazel_tut\Hazel\vendor\spdlog\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4251;4275</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;SPDLOG_SHARED_LIB;FMT_EXPORT;FMT_SHARED;SPDLOG_COMPILED_LIB;CMAKE_INTDIR="Release";spdlog_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;SPDLOG_SHARED_LIB;FMT_EXPORT;FMT_SHARED;SPDLOG_COMPILED_LIB;CMAKE_INTDIR=\"Release\";spdlog_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\dev\Hazel_tut\Hazel\vendor\spdlog\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\dev\Hazel_tut\Hazel\vendor\spdlog\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/dev/Hazel_tut/build/Hazel/vendor/spdlog/Release/spdlog.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/dev/Hazel_tut/build/Hazel/vendor/spdlog/Release/spdlog.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\dev\Hazel_tut\Hazel\vendor\spdlog\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4251;4275</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;SPDLOG_SHARED_LIB;FMT_EXPORT;FMT_SHARED;SPDLOG_COMPILED_LIB;CMAKE_INTDIR="MinSizeRel";spdlog_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;SPDLOG_SHARED_LIB;FMT_EXPORT;FMT_SHARED;SPDLOG_COMPILED_LIB;CMAKE_INTDIR=\"MinSizeRel\";spdlog_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\dev\Hazel_tut\Hazel\vendor\spdlog\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\dev\Hazel_tut\Hazel\vendor\spdlog\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/dev/Hazel_tut/build/Hazel/vendor/spdlog/MinSizeRel/spdlog.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/dev/Hazel_tut/build/Hazel/vendor/spdlog/MinSizeRel/spdlog.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\dev\Hazel_tut\Hazel\vendor\spdlog\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4251;4275</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;SPDLOG_SHARED_LIB;FMT_EXPORT;FMT_SHARED;SPDLOG_COMPILED_LIB;CMAKE_INTDIR="RelWithDebInfo";spdlog_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;SPDLOG_SHARED_LIB;FMT_EXPORT;FMT_SHARED;SPDLOG_COMPILED_LIB;CMAKE_INTDIR=\"RelWithDebInfo\";spdlog_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\dev\Hazel_tut\Hazel\vendor\spdlog\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\dev\Hazel_tut\Hazel\vendor\spdlog\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/dev/Hazel_tut/build/Hazel/vendor/spdlog/RelWithDebInfo/spdlog.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/dev/Hazel_tut/build/Hazel/vendor/spdlog/RelWithDebInfo/spdlog.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\dev\Hazel_tut\Hazel\vendor\spdlog\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/dev/Hazel_tut/Hazel/vendor/spdlog/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/dev/Hazel_tut -BD:/dev/Hazel_tut/build --check-stamp-file D:/dev/Hazel_tut/build/Hazel/vendor/spdlog/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.17\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CheckIncludeFile.c.in;C:\Program Files\CMake\share\cmake-3.17\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\GNUInstallDirs.cmake;D:\dev\Hazel_tut\Hazel\vendor\spdlog\cmake\ide.cmake;D:\dev\Hazel_tut\Hazel\vendor\spdlog\cmake\utils.cmake;D:\dev\Hazel_tut\Hazel\vendor\spdlog\cmake\version.rc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\dev\Hazel_tut\build\Hazel\vendor\spdlog\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/dev/Hazel_tut/Hazel/vendor/spdlog/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/dev/Hazel_tut -BD:/dev/Hazel_tut/build --check-stamp-file D:/dev/Hazel_tut/build/Hazel/vendor/spdlog/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.17\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CheckIncludeFile.c.in;C:\Program Files\CMake\share\cmake-3.17\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\GNUInstallDirs.cmake;D:\dev\Hazel_tut\Hazel\vendor\spdlog\cmake\ide.cmake;D:\dev\Hazel_tut\Hazel\vendor\spdlog\cmake\utils.cmake;D:\dev\Hazel_tut\Hazel\vendor\spdlog\cmake\version.rc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\dev\Hazel_tut\build\Hazel\vendor\spdlog\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/dev/Hazel_tut/Hazel/vendor/spdlog/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/dev/Hazel_tut -BD:/dev/Hazel_tut/build --check-stamp-file D:/dev/Hazel_tut/build/Hazel/vendor/spdlog/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.17\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CheckIncludeFile.c.in;C:\Program Files\CMake\share\cmake-3.17\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\GNUInstallDirs.cmake;D:\dev\Hazel_tut\Hazel\vendor\spdlog\cmake\ide.cmake;D:\dev\Hazel_tut\Hazel\vendor\spdlog\cmake\utils.cmake;D:\dev\Hazel_tut\Hazel\vendor\spdlog\cmake\version.rc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\dev\Hazel_tut\build\Hazel\vendor\spdlog\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/dev/Hazel_tut/Hazel/vendor/spdlog/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/dev/Hazel_tut -BD:/dev/Hazel_tut/build --check-stamp-file D:/dev/Hazel_tut/build/Hazel/vendor/spdlog/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.17\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CheckIncludeFile.c.in;C:\Program Files\CMake\share\cmake-3.17\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.17\Modules\GNUInstallDirs.cmake;D:\dev\Hazel_tut\Hazel\vendor\spdlog\cmake\ide.cmake;D:\dev\Hazel_tut\Hazel\vendor\spdlog\cmake\utils.cmake;D:\dev\Hazel_tut\Hazel\vendor\spdlog\cmake\version.rc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\dev\Hazel_tut\build\Hazel\vendor\spdlog\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="D:\dev\Hazel_tut\Hazel\vendor\spdlog\src\spdlog.cpp" />
+    <ClCompile Include="D:\dev\Hazel_tut\Hazel\vendor\spdlog\src\stdout_sinks.cpp" />
+    <ClCompile Include="D:\dev\Hazel_tut\Hazel\vendor\spdlog\src\color_sinks.cpp" />
+    <ClCompile Include="D:\dev\Hazel_tut\Hazel\vendor\spdlog\src\file_sinks.cpp" />
+    <ClCompile Include="D:\dev\Hazel_tut\Hazel\vendor\spdlog\src\async.cpp" />
+    <ClCompile Include="D:\dev\Hazel_tut\Hazel\vendor\spdlog\src\cfg.cpp" />
+    <ClCompile Include="D:\dev\Hazel_tut\Hazel\vendor\spdlog\src\fmt.cpp" />
+    <ResourceCompile Include="D:\dev\Hazel_tut\build\Hazel\vendor\spdlog\version.rc" />
+    <ClInclude Include="D:\dev\Hazel_tut\Hazel\vendor\spdlog\include\spdlog\async.h" />
+    <ClInclude Include="D:\dev\Hazel_tut\Hazel\vendor\spdlog\include\spdlog\async_logger-inl.h" />
+    <ClInclude Include="D:\dev\Hazel_tut\Hazel\vendor\spdlog\include\spdlog\async_logger.h" />
+    <ClInclude Include="D:\dev\Hazel_tut\Hazel\vendor\spdlog\include\spdlog\common-inl.h" />
+    <ClInclude Include="D:\dev\Hazel_tut\Hazel\vendor\spdlog\include\spdlog\common.h" />
+    <ClInclude Include="D:\dev\Hazel_tut\Hazel\vendor\spdlog\include\spdlog\formatter.h" />
+    <ClInclude Include="D:\dev\Hazel_tut\Hazel\vendor\spdlog\include\spdlog\fwd.h" />
+    <ClInclude Include="D:\dev\Hazel_tut\Hazel\vendor\spdlog\include\spdlog\logger-inl.h" />
+    <ClInclude Include="D:\dev\Hazel_tut\Hazel\vendor\spdlog\include\spdlog\logger.h" />
+    <ClInclude Include="D:\dev\Hazel_tut\Hazel\vendor\spdlog\include\spdlog\pattern_formatter-inl.h" />
+    <ClInclude Include="D:\dev\Hazel_tut\Hazel\vendor\spdlog\include\spdlog\pattern_formatter.h" />
+    <ClInclude Include="D:\dev\Hazel_tut\Hazel\vendor\spdlog\include\spdlog\spdlog-inl.h" />
+    <ClInclude Include="D:\dev\Hazel_tut\Hazel\vendor\spdlog\include\spdlog\spdlog.h" />
+    <ClInclude Include="D:\dev\Hazel_tut\Hazel\vendor\spdlog\include\spdlog\tweakme.h" />
+    <ClInclude Include="D:\dev\Hazel_tut\Hazel\vendor\spdlog\include\spdlog\version.h" />
+    <ClInclude Include="D:\dev\Hazel_tut\Hazel\vendor\spdlog\include\spdlog\details\backtracer-inl.h" />
+    <ClInclude Include="D:\dev\Hazel_tut\Hazel\vendor\spdlog\include\spdlog\details\backtracer.h" />
+    <ClInclude Include="D:\dev\Hazel_tut\Hazel\vendor\spdlog\include\spdlog\details\circular_q.h" />
+    <ClInclude Include="D:\dev\Hazel_tut\Hazel\vendor\spdlog\include\spdlog\details\console_globals.h" />
+    <ClInclude Include="D:\dev\Hazel_tut\Hazel\vendor\spdlog\include\spdlog\details\file_helper-inl.h" />
+    <ClInclude Include="D:\dev\Hazel_tut\Hazel\vendor\spdlog\include\spdlog\details\file_helper.h" />
+    <ClInclude Include="D:\dev\Hazel_tut\Hazel\vendor\spdlog\include\spdlog\details\fmt_helper.h" />
+    <ClInclude Include="D:\dev\Hazel_tut\Hazel\vendor\spdlog\include\spdlog\details\log_msg-inl.h" />
+    <ClInclude Include="D:\dev\Hazel_tut\Hazel\vendor\spdlog\include\spdlog\details\log_msg.h" />
+    <ClInclude Include="D:\dev\Hazel_tut\Hazel\vendor\spdlog\include\spdlog\details\log_msg_buffer-inl.h" />
+    <ClInclude Include="D:\dev\Hazel_tut\Hazel\vendor\spdlog\include\spdlog\details\log_msg_buffer.h" />
+    <ClInclude Include="D:\dev\Hazel_tut\Hazel\vendor\spdlog\include\spdlog\details\mpmc_blocking_q.h" />
+    <ClInclude Include="D:\dev\Hazel_tut\Hazel\vendor\spdlog\include\spdlog\details\null_mutex.h" />
+    <ClInclude Include="D:\dev\Hazel_tut\Hazel\vendor\spdlog\include\spdlog\details\os-inl.h" />
+    <ClInclude Include="D:\dev\Hazel_tut\Hazel\vendor\spdlog\include\spdlog\details\os.h" />
+    <ClInclude Include="D:\dev\Hazel_tut\Hazel\vendor\spdlog\include\spdlog\details\periodic_worker-inl.h" />
+    <ClInclude Include="D:\dev\Hazel_tut\Hazel\vendor\spdlog\include\spdlog\details\periodic_worker.h" />
+    <ClInclude Include="D:\dev\Hazel_tut\Hazel\vendor\spdlog\include\spdlog\details\registry-inl.h" />
+    <ClInclude Include="D:\dev\Hazel_tut\Hazel\vendor\spdlog\include\spdlog\details\registry.h" />
+    <ClInclude Include="D:\dev\Hazel_tut\Hazel\vendor\spdlog\include\spdlog\details\synchronous_factory.h" />
+    <ClInclude Include="D:\dev\Hazel_tut\Hazel\vendor\spdlog\include\spdlog\details\tcp_client-windows.h" />
+    <ClInclude Include="D:\dev\Hazel_tut\Hazel\vendor\spdlog\include\spdlog\details\tcp_client.h" />
+    <ClInclude Include="D:\dev\Hazel_tut\Hazel\vendor\spdlog\include\spdlog\details\thread_pool-inl.h" />
+    <ClInclude Include="D:\dev\Hazel_tut\Hazel\vendor\spdlog\include\spdlog\details\thread_pool.h" />
+    <ClInclude Include="D:\dev\Hazel_tut\Hazel\vendor\spdlog\include\spdlog\details\windows_include.h" />
+    <ClInclude Include="D:\dev\Hazel_tut\Hazel\vendor\spdlog\include\spdlog\sinks\android_sink.h" />
+    <ClInclude Include="D:\dev\Hazel_tut\Hazel\vendor\spdlog\include\spdlog\sinks\ansicolor_sink-inl.h" />
+    <ClInclude Include="D:\dev\Hazel_tut\Hazel\vendor\spdlog\include\spdlog\sinks\ansicolor_sink.h" />
+    <ClInclude Include="D:\dev\Hazel_tut\Hazel\vendor\spdlog\include\spdlog\sinks\base_sink-inl.h" />
+    <ClInclude Include="D:\dev\Hazel_tut\Hazel\vendor\spdlog\include\spdlog\sinks\base_sink.h" />
+    <ClInclude Include="D:\dev\Hazel_tut\Hazel\vendor\spdlog\include\spdlog\sinks\basic_file_sink-inl.h" />
+    <ClInclude Include="D:\dev\Hazel_tut\Hazel\vendor\spdlog\include\spdlog\sinks\basic_file_sink.h" />
+    <ClInclude Include="D:\dev\Hazel_tut\Hazel\vendor\spdlog\include\spdlog\sinks\daily_file_sink.h" />
+    <ClInclude Include="D:\dev\Hazel_tut\Hazel\vendor\spdlog\include\spdlog\sinks\dist_sink.h" />
+    <ClInclude Include="D:\dev\Hazel_tut\Hazel\vendor\spdlog\include\spdlog\sinks\dup_filter_sink.h" />
+    <ClInclude Include="D:\dev\Hazel_tut\Hazel\vendor\spdlog\include\spdlog\sinks\msvc_sink.h" />
+    <ClInclude Include="D:\dev\Hazel_tut\Hazel\vendor\spdlog\include\spdlog\sinks\null_sink.h" />
+    <ClInclude Include="D:\dev\Hazel_tut\Hazel\vendor\spdlog\include\spdlog\sinks\ostream_sink.h" />
+    <ClInclude Include="D:\dev\Hazel_tut\Hazel\vendor\spdlog\include\spdlog\sinks\ringbuffer_sink.h" />
+    <ClInclude Include="D:\dev\Hazel_tut\Hazel\vendor\spdlog\include\spdlog\sinks\rotating_file_sink-inl.h" />
+    <ClInclude Include="D:\dev\Hazel_tut\Hazel\vendor\spdlog\include\spdlog\sinks\rotating_file_sink.h" />
+    <ClInclude Include="D:\dev\Hazel_tut\Hazel\vendor\spdlog\include\spdlog\sinks\sink-inl.h" />
+    <ClInclude Include="D:\dev\Hazel_tut\Hazel\vendor\spdlog\include\spdlog\sinks\sink.h" />
+    <ClInclude Include="D:\dev\Hazel_tut\Hazel\vendor\spdlog\include\spdlog\sinks\stdout_color_sinks-inl.h" />
+    <ClInclude Include="D:\dev\Hazel_tut\Hazel\vendor\spdlog\include\spdlog\sinks\stdout_color_sinks.h" />
+    <ClInclude Include="D:\dev\Hazel_tut\Hazel\vendor\spdlog\include\spdlog\sinks\stdout_sinks-inl.h" />
+    <ClInclude Include="D:\dev\Hazel_tut\Hazel\vendor\spdlog\include\spdlog\sinks\stdout_sinks.h" />
+    <ClInclude Include="D:\dev\Hazel_tut\Hazel\vendor\spdlog\include\spdlog\sinks\syslog_sink.h" />
+    <ClInclude Include="D:\dev\Hazel_tut\Hazel\vendor\spdlog\include\spdlog\sinks\systemd_sink.h" />
+    <ClInclude Include="D:\dev\Hazel_tut\Hazel\vendor\spdlog\include\spdlog\sinks\tcp_sink.h" />
+    <ClInclude Include="D:\dev\Hazel_tut\Hazel\vendor\spdlog\include\spdlog\sinks\win_eventlog_sink.h" />
+    <ClInclude Include="D:\dev\Hazel_tut\Hazel\vendor\spdlog\include\spdlog\sinks\wincolor_sink-inl.h" />
+    <ClInclude Include="D:\dev\Hazel_tut\Hazel\vendor\spdlog\include\spdlog\sinks\wincolor_sink.h" />
+    <ClInclude Include="D:\dev\Hazel_tut\Hazel\vendor\spdlog\include\spdlog\fmt\bin_to_hex.h" />
+    <ClInclude Include="D:\dev\Hazel_tut\Hazel\vendor\spdlog\include\spdlog\fmt\fmt.h" />
+    <ClInclude Include="D:\dev\Hazel_tut\Hazel\vendor\spdlog\include\spdlog\fmt\ostr.h" />
+    <ClInclude Include="D:\dev\Hazel_tut\Hazel\vendor\spdlog\include\spdlog\fmt\bundled\chrono.h" />
+    <ClInclude Include="D:\dev\Hazel_tut\Hazel\vendor\spdlog\include\spdlog\fmt\bundled\color.h" />
+    <ClInclude Include="D:\dev\Hazel_tut\Hazel\vendor\spdlog\include\spdlog\fmt\bundled\compile.h" />
+    <ClInclude Include="D:\dev\Hazel_tut\Hazel\vendor\spdlog\include\spdlog\fmt\bundled\core.h" />
+    <ClInclude Include="D:\dev\Hazel_tut\Hazel\vendor\spdlog\include\spdlog\fmt\bundled\format-inl.h" />
+    <ClInclude Include="D:\dev\Hazel_tut\Hazel\vendor\spdlog\include\spdlog\fmt\bundled\format.h" />
+    <ClInclude Include="D:\dev\Hazel_tut\Hazel\vendor\spdlog\include\spdlog\fmt\bundled\locale.h" />
+    <ClInclude Include="D:\dev\Hazel_tut\Hazel\vendor\spdlog\include\spdlog\fmt\bundled\ostream.h" />
+    <ClInclude Include="D:\dev\Hazel_tut\Hazel\vendor\spdlog\include\spdlog\fmt\bundled\posix.h" />
+    <ClInclude Include="D:\dev\Hazel_tut\Hazel\vendor\spdlog\include\spdlog\fmt\bundled\printf.h" />
+    <ClInclude Include="D:\dev\Hazel_tut\Hazel\vendor\spdlog\include\spdlog\fmt\bundled\ranges.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\dev\Hazel_tut\build\ZERO_CHECK.vcxproj">
+      <Project>{01837577-D946-34ED-874A-866E27BDFC39}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
